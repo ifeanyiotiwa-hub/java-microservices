@@ -42,8 +42,9 @@ public class Tour {
     @Enumerated
     private  Region region;
 
-    public Tour(Integer id, String title, String description, String blurb, Integer price, String duration, String bullets, String keywords, TourPackage tourPackage, Difficulty difficulty, Region region) {
-        this.id = id;
+    public Tour(String title, String description, String blurb,
+                Integer price, String duration, String bullets, String keywords,
+                TourPackage tourPackage, Difficulty difficulty, Region region) {
         this.title = title;
         this.description = description;
         this.blurb = blurb;
