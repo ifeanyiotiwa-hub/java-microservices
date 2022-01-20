@@ -22,8 +22,6 @@ public class TourService {
     }
 
     /**
-     *
-     * @param id id
      * @param title title
      * @param description description
      * @param blurb blurb
@@ -31,7 +29,7 @@ public class TourService {
      * @param duration duration
      * @param bullets comma-separated bullets
      * @param keywords keywords
-     * @param tourPackageName tour pac
+     * @param tourPackageName tour package name
      * @param difficulty difficulty
      * @param region region
      * @return Tour Entity
@@ -49,6 +47,10 @@ public class TourService {
                                 bullets, keywords, tourPackage, difficulty, region));
     }
 
+    /**
+     *
+     * @return the total
+     */
     public long total() {
         return tourRepository.count();
     }
